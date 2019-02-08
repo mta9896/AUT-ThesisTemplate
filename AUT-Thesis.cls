@@ -115,14 +115,13 @@
 {\large\bfseries\@faculty\space}
 \vskip 1cm
 %nkhComment: in case the title is too large
-\linespread{1.2}
-{\huge\titlefont \@title \par}
-\vskip 15mm
+
 \if@bscthesis 
-	{\large\bfseries{پروژه کارشناسی \@subject}
+	{\large\bfseries{پروژه‌ی کارشناسی \@subject}
 	\ifx\@field\undefined%
 		\relax
 	\else
+	\vskip 0.5cm
 		گرایش \@field
 	\fi
 	}
@@ -140,9 +139,13 @@
 	\vskip .2cm
 	\centerline{\large \bfseries%
 		گرایش \@field}
-\fi\fi	
+\fi\fi
 \par
 \vskip 10mm
+
+\linespread{1.2}
+{\huge\titlefont \@title \par}
+\vskip 15mm	
 {\bfseries\by}\par
 {\Large\bfseries{\large\bfseries \@name\ \ \@surname}}
 \par
@@ -170,7 +173,7 @@
 \else\fi
 \else
 \ifx\@secondadvisor\undefined%
-استاد مشاور
+استاد داور
 {\Large\bfseries\par
 \@firstadvisor}
 \else
